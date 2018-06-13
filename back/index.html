@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Demo::Free Premium HTML Admin/Backend Template For Web Applications: BlueWhale Admin</title>
+    <link href="style-sheet/style.css" rel="stylesheet" type="text/css" />
+    <script src="javascript/jquery.min.js" type="text/javascript"></script>
+    <link href="style-sheet/prettyPhoto.css" rel="stylesheet" type="text/css" />
+    <script src="javascript/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="javascript/vcard.js" type="text/javascript"></script>
+<style type="text/css">
+body
+{
+background-color:#2E5E79;
+}
+</style>
+	<!--Dynamically creates ads markup-->
+   <?php include("http://www.egrappler.com/ads-header.php"); ?>
+
+    <!--wrapper-->
+    <div id="wrapper">
+        <!--header-->
+  <iframe src="dashboard.html" name="content-area" frameborder="0" width="90%" height="1300px">
+  </iframe>
+	<div id="demo-side-bar" style="position:relative;display:block;float:right;top:0px;">
+   <?php include("http://www.egrappler.com/ad-sidebar.php");?>
+   </div>
+    </div>
+    <!--wrapper end-->
+	<!--Dynamically creates analytics markup-->
+	 <?php include("http://www.egrappler.com/analytics.php");?>
+	 <script type="text/javascript">
+		var left = parseInt( $('#content-area').width()) - parseInt( $('#demo-side-bar').outerWidth()) - 246;
+		alert('left');
+		$('#demo-side-bar').css({'left': left +'px',display:'block'});
+	</script>
+
+</body>
+</html>
