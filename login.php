@@ -176,17 +176,6 @@ while($row = mysqli_fetch_array($login)){
 }}
  ?>
 
-
-
-
-
-
-
-
-
-
-
-
 <script>
 // Get the modal
 var modal = document.getElementById('id01');

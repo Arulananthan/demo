@@ -6,8 +6,6 @@ include "db.php";
 //sesssion_start();
  ?>
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -72,12 +70,12 @@ input[type=submit]:hover {
     <label for="country"><b>Country</b></label><br>
     <select id="country"  name="country">
       <option value="">Select the Countries</option>
-      <?php
-      $country = mysqli_query($con,"select * from Countries");
-    while($fet_country = mysqli_fetch_array($country)){
-        ?>
-      <option value="<?php echo $fet_country['cid'];?>"><?php echo $fet_country['countries_name'];?></option>
-      <?php }?>
+      <option value="">COUNTRY 1</option>
+      <option value="">COUNTRY 2</option>
+      <option value="">COUNTRY 3</option>
+      <option value="">COUNTRY 4</option>
+      <option value="">COUNTRY 5</option>
+
     </select><br>
 
     <label for="subject"><b>Subject</b></label><br>
@@ -87,35 +85,18 @@ input[type=submit]:hover {
   </form>
 </div>
 <?php
-//
-// $to = "arulanandhan.it@gmail.com";
-// $subject = "My subject";
-// $txt = "Hello world!";
-// echo $headers = "From: arulanantham.it@gmail.com" . "\r\n" .
-// "CC: ar08jt@gmail.com";
-//
-// mail($to,$subject,$txt,$headers);
-?>
-<?php
 if(isset($_POST["submit"])){
-
-
    echo $to = $_POST["email"];
    $subject = $_POST["subject"];
    $body =$_POST["firstname"];
-   $headers = "From: arulanandhan.it@gmail.com" . "\r\n" . "CC: ar08jt@gmail.com";
+   $headers = "FROM MAIL ID" . "\r\n" . "CC:MAIL ID";
    if (mail($to, $subject, $body, $headers)) {
     echo "message sent!";
     }
     else {
         echo "failed";
     }
-  // mail($to,$subject,$body,$header);
-   //echo "Mail sented successfully...";
 }
 ?>
-
-
-
 </body>
 </html>

@@ -27,25 +27,32 @@ include("menu.php");
       <th>Function</th>
       <th>Uploader Name</th>
       <th>Upload DB</th>
-      <th>data</th>
+      <th>date</th>
     </tr>
   </thead
   <tbody>
-  <?php
-$conn = mysqli_connect('localhost','root','','test');
-$database = mysqli_query($conn,"SELECT * FROM `database`");
-
-while($fet_database = mysqli_fetch_array($database)){
-//  print_r($fet_database);
-  ?>
     <tr class="odd gradeX">
-      <td><?php echo $fet_database['table_name']; ?></td>
-      <td><?php echo $fet_database['function']; ?></td>
-      <td><?php echo $fet_database['creater_name']; ?></td>
-      <td class="center"><?php echo $fet_database['db_name']; ?></td>
-      <td class="center"><?php echo $fet_database['added_date']; ?></td>
+      <td>TABLE 1</td>
+      <td>CREATE</td>
+      <td>abcd</td>
+      <td class="center">database</td>
+      <td class="center">date</td>
     </tr>
-  <?php } ?>
+    <tr class="odd gradeX">
+      <td>TABLE 1</td>
+      <td>CREATE</td>
+      <td>abcd</td>
+      <td class="center">database</td>
+      <td class="center">date</td>
+    </tr>
+    <tr class="odd gradeX">
+      <td>TABLE 1</td>
+      <td>CREATE</td>
+      <td>abcd</td>
+      <td class="center">database</td>
+      <td class="center">date</td>
+    </tr>
+    
   </tbody>
 </table>
         </div>

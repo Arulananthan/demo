@@ -23,16 +23,6 @@
   </script>
 </head>
 <body>
-
-<!-- <ol id="selectable">
-  <li class="ui-widget-content">Item 1</li>
-  <li class="ui-widget-content">Item 2</li>
-  <li class="ui-widget-content">Item 3</li>
-  <li class="ui-widget-content">Item 4</li>
-  <li class="ui-widget-content">Item 5</li>
-  <li class="ui-widget-content">Item 6</li>
-  <li class="ui-widget-content">Item 7</li>
-</ol> -->
 <form id="form" name="form" action="" method="post">
 <select name="demo[]" id="demo" id="selectable" multiple style="width:300px;height:100px">
   <option  value="1">Item 1</option>
@@ -53,8 +43,8 @@
 <?php
 if(isset($_POST['submit'])){
    $demo = $_POST['demo'];
-  echo  $imp_demo = implode(',',$demo);
-  print_r($demo);
+    $imp_demo = implode(',',$demo);
+
 }
 
  ?>

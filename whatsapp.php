@@ -145,7 +145,6 @@ span.psw {
     <br>
     <textarea name="message" id="message" style="width: 324px;
     height: 139px;"></textarea>
-  <!-- <a href="whatsapp://send?text=Hello World!&phone=+918012669450">Ping me on WhatsApp</a>-->
 <a href="https://app.chat-api.com" target="_blank">	Click to WhatsApp Chat</a>
       <button type="button" name="submit" id="submit">Send</button>
     </div>
@@ -153,41 +152,7 @@ span.psw {
 
   </form>
 
-<?php
-//     $phone = $_POST["pno"];
-//     $user = explode(',',$_POST["pno"]);
-//   //print_r($user);
-//     echo "<pre>";
-// //echo $imp = implode('","',$user);'<br>';
-//   // $contry = 91;
-//    $imp = implode("','",$user);
-//    echo $arul = "'$contry$imp'";
-//
-// if(isset($_POST["submit"]))
-// {                                  //Send a message
-//                $data = [
-//                   'phone' =>"'91$imp'", // Receivers phone
-//                    //'phone' =>'918012669450',
-//                    'body' => $_POST["message"], // Message
-//                ];
-//               echo $data['phone'];
-//               print_r($date['phone']);
-//                $json = json_encode($data); // Encode data to JSON
-//                                                 // URL for request POST /message
-//                $url = 'https://eu4.chat-api.com/instance3883/message?token=im7s0yq77xa8d7sk';
-//                                                  // Make a POST request
-//               $options = stream_context_create(['http' => [
-//                        'method'  => 'POST',
-//                        'header'  => 'Content-type: application/json',
-//                        'content' => $json
-//                    ]
-//                ]);
-//                                                 // Send a request
-//               echo $result = file_get_contents($url, false, $options);
 
-//}
-
-?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
  $(document).ready(function()
